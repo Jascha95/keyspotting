@@ -1,0 +1,12 @@
+NPDPIE_TAU_F_P:	idx=1811	 # AMPA synapse time constant
+NPDPIE_TAU_S_P:	idx=1811    # NMDA synapse time constant
+NPDPIE_THR_F_P:	idx=0	 # AMPA synapse gain
+NPDPIE_THR_S_P:	idx=0	 	 # NMDA synapse gain
+NPDPII_TAU_F_P:	idx=1811		 # GABA A synapse time constant
+NPDPII_TAU_S_P:	idx=1811 # GABA B synapse time constant
+NPDPII_THR_F_P:	idx=0	 # GABA A synapse gain
+NPDPII_THR_S_P:	idx=0	 # GABA B synapse gain
+PS_WEIGHT_EXC_F_N:	idx=0		 # AMPA synapse weight
+PS_WEIGHT_EXC_S_N:	idx=0		 # NMDA synapse weight
+PS_WEIGHT_INH_F_N:	idx=0		 # GABA A synapse weight
+PS_WEIGHT_INH_S_N:	idx=0		 # GABA B synapse weight
