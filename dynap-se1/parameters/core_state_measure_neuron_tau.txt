@@ -1,0 +1,7 @@
+IF_AHTAU_N:	idx=1811 # Adaptation time constant
+IF_AHTHR_N:	idx=0	 # Adaptation gain
+IF_AHW_P:	idx=0   # Adaptation weight
+IF_DC_P:	idx=0   # DC input level
+IF_NMDA_N:	idx=0   # NMDA mechanism enable
+IF_TAU2_N:	idx=1811   # Tau 2 (neuron time constant)
+IF_THR_N:	idx=0   # Neuron membrane voltage gain
