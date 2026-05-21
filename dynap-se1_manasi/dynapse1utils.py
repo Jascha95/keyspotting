@@ -151,7 +151,7 @@ def open_specific_device_in_sequence(device_id : int):
     """
 
     opened_devices = {}
-    print("Opening device #{device_id} (approx. {0})...".format(time.strftime("%M min %S sec", time.gmtime(102*device_id))))
+    print(f"Opening device #{device_id} (approx. {0})...".format(time.strftime("%M min %S sec", time.gmtime(102*device_id))))
     
     for idx in range(device_id):
         unopened_devices = samna.device.get_unopened_devices()
