@@ -1,3 +1,5 @@
 **/dynap-se1/.venv/
 .venv/
+/dynap-se1/.venv
 **/.venv/
+**/dynapse-se1/.venv/
