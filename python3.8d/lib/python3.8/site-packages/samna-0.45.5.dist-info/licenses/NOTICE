@@ -1,0 +1,92 @@
+Samna
+Copyright 2025, SynSense
+
+Open source 3rd party dependencies bundled in this package:
+
+dependency: Boost
+license: BSL-1.0
+url: https://www.boost.org/users/license.html
+
+dependency: cereal
+license: BSD-3-Clause
+url: https://github.com/USCiLab/cereal/blob/master/LICENSE
+
+dependency: concurrentqueue
+license: BSD-2-Clause
+url: https://github.com/cameron314/concurrentqueue/blob/master/LICENSE.md
+
+dependency: cppzmq
+license: MIT
+url: https://github.com/zeromq/cppzmq/blob/master/LICENSE
+
+dependency: Compile Time Regular Expressions
+license: Apache-2.0-with-llvm-exceptions
+url: https://github.com/hanickadot/compile-time-regular-expressions/blob/main/LICENSE
+
+dependency: Eigen
+license: MPL-2.0
+url: https://gitlab.com/libeigen/eigen/-/blob/master/COPYING.MPL2?ref_type=heads
+
+dependency: GLEW - The OpenGL Extension Wrangler Library
+license: BSD-3-Clause AND MIT
+url: https://github.com/nigels-com/glew/blob/master/LICENSE.txt
+
+dependency: GLFW
+license: Zlib
+url: https://www.glfw.org/license
+
+dependency: Dear ImGui
+license: MIT
+url: https://github.com/ocornut/imgui/blob/master/LICENSE.txt
+
+dependency: ImPlot
+license: MIT
+url: https://github.com/epezent/implot/blob/master/LICENSE
+
+dependency: libcaer
+license: BSD-2-Clause
+url: https://gitlab.com/inivation/dv/libcaer/-/blob/master/LICENSE?ref_type=heads
+
+dependency: llvm
+license: Apache-2.0 with LLVM Exceptions
+url: https://llvm.org/LICENSE.txt
+
+dependency: Sodium
+license: ISC
+url: https://github.com/jedisct1/libsodium/blob/master/LICENSE
+
+dependency: Magic Enum C++
+license: MIT
+url: https://github.com/Neargye/magic_enum/blob/master/LICENSE
+
+dependency: OpenCV
+license: Apache-2.0
+url: https://opencv.org/license/
+
+dependency: OpenEB
+license: Apache-2.0
+url: https://github.com/prophesee-ai/openeb/blob/main/licensing/LICENSE_OPEN
+
+dependency: pybind11
+license: BSD-3-Clause
+url: https://github.com/pybind/pybind11/blob/master/LICENSE
+
+dependency: spdlog
+license: MIT
+url: https://github.com/gabime/spdlog/blob/v1.x/LICENSE
+
+dependency: stb
+license: MIT
+url: https://github.com/nothings/stb/blob/master/LICENSE
+
+dependency: expected
+license: CC0-1.0
+url: https://github.com/TartanLlama/expected/blob/master/COPYING
+
+dependency: ZeroMQ
+license: MPL-2.0
+url: https://zeromq.org/license/
+
+dependency: zlib
+license: Zlib
+url: https://www.zlib.net/zlib_license.html

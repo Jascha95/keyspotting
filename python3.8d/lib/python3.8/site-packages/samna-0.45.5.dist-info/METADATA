@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: samna
+Version: 0.45.5
+Summary: SynSense Samna Public Package
+Author-email: SynSense <carsten.nielsen@synsense.ai>
+License-Expression: Apache-2.0
+Project-URL: Homepage, https://synsense.ai/
+Project-URL: Documentation, https://synsense-sys-int.gitlab.io/samna/
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: NOTICE
+Dynamic: license-file
