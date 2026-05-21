@@ -4,3 +4,6 @@
 **/.venv/
 **/dynapse-se1/.venv/
 **/python3.8d
+dynap-se1/.venv/lib/python3.8/site-packages/samna/.dylibs/libwhis.dyli
+dynap-se1/.venv/lib/python3.8/site-packages/samna/header.pch
+dynap-se1/.venv/lib/python3.8/site-packages/samna/samna.cpython-38-darwin.so
