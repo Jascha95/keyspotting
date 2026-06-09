@@ -1,16 +1,12 @@
 #!/bin/bash
 
-
-echo "Script running"
-
-
 OS=$(uname)
 
-echo $OS "aka aka OSX(mac)"
-if [[ $OS == "Darwin" ]]; then
+
+if [[ "$OS" == "Darwin" ]]; then
     echo "running on mac"
     VAR=$(ioreg -p IOUSB | grep -i "Dynapse")
-else
+
     echo "only $(ioreg -p IOUSB -w0 | grep -E "+-o|USB Product"
 ) internals \n $(system_profiler SPUSBDataType) "
     if [ -n "$VAR" ]; then
@@ -20,7 +16,35 @@ else
 
 fi
 
-if [[ $OS != "Darwin" ]]; then
+TARGET_SERIAL="00000007"
+
+JAMES=$(python -c "
+import samna
+devices = samna.device.get_all_devices()
+for d in devices:
+    if d.serial_number == '$TARGET_SERIAL':
+        print(f'Bus {d.usb_bus_number:03d} Device {d.usb_device_address:03d}')
+")
+
+OTHER_BOARDS=$(python -c "import samna; devices = samna.device.get_all_devices(); [print(d) for d in devices]" | while IFS= read -r line; do
+    echo -e "  → $line ")
+
+# if [[ $OS == "Linux" ]]; then
+if [[ "$OS" != "Darwin" ]]; then
     echo "$OS"
-    echo "running on linux"
+    echo "devices avail:"
+    python -c "import samna; devices = samna.device.get_all_devices(); [print(d) for d in devices]" | while IFS= read -r line; do
+    echo -e "  → $line "
+    done
+    
+    echo -e "\n"
+    # JAMES=$(lsusb  | grep "Thesycon")
+    if [[-n "$JAMES"]]; then 
+        echo "007 found " 
+        echo -e "James: \n$JAMES"
+    else
+    echo "James (serial $TARGET_SERIAL) not found $OTHER_BOARDS"
+    #lsusb | while read line; do echo "$line"; done
+    
+    fi 
 fi
