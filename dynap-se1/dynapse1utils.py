@@ -47,7 +47,7 @@ def open_device(sender_port=33336, receiver_port=33335, select_device=False):
         samna_node = samna.SamnaNode(sender_endpoint, receiver_endpoint, node_id)
     except Exception as e:
         print("ERROR: "+str(e)+", please re-run open_device()!")
-
+    
     # setup the python interpreter node
     samna.setup_local_node(receiver_endpoint, sender_endpoint, interpreter_id)
     # open a connection to device_node, i.e. the store
